@@ -2,18 +2,18 @@
 Solving algorithm problems using Python
 
 ## BaekJoon Problem solving
-10.재귀(완)
-15.DP1(완)
-16.그리디(완)
-20.분할정복(완)
-21.이분탐색(진행중)
-22.우선순위 큐
-23.DP2
-24.DFS,BFS(완)
-25.최단경로
-26.투 포인터
-27.동적 계획법과 최단거리 역추적
-28.트리
+10.재귀(완)<br>
+15.DP1(완)<br>
+16.그리디(완)<br>
+20.분할정복(완)<br>
+21.이분탐색(진행중)<br>
+22.우선순위 큐<br>
+23.DP2<br>
+24.DFS,BFS(완)<br>
+25.최단경로<br>
+26.투 포인터<br>
+27.동적 계획법과 최단거리 역추적<br>
+28.트리<br>
 
 ## Programmers Problem solving
 
