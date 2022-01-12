@@ -1,11 +1,26 @@
 import sys
-from typing import AnyStr
 input = sys.stdin.readline
 
-n = int(input())
-A = list(map(int, input().split()))
-m = int(input())
-B = list(map(int, input().split()))
+k, n = map(int, input().split())
+lines = [int(input()) for _ in range(k)]
+lines.sort()
+start, end = [1, max(lines)]
 
-for b in B:
-    print(A.count(b), end = " ")
+def find(data, val):
+    result = 0
+    for d in data:
+        result += d // val
+    return result
+
+while start <= end:
+    mid = (start + end) // 2
+    value = find(lines, mid)
+
+    if value < n:
+        end = mid - 1
+    else:
+        start = mid + 1
+
+print(end)
+
+
