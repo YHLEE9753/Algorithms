@@ -6,6 +6,7 @@ Solving algorithm problems using Python
 15. DP1(완)
 16. 그리디(완)
 20. 분할정복(완)
+21. 이분탐색(진행중)
 22. 우선순위 큐
 23. DP2
 24. DFS,BFS(완)
