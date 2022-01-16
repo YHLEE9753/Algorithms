@@ -1,16 +1,21 @@
 import sys
 input = sys.stdin.readline
 
-def make(n:int) -> int:
-    global map
+def func(n):
+    if n == 1:
+        return ["*"]
+    
+    Stars = func(n//3)
+    L = []
 
-    if n == 3:
-        map[0:3] = map[2:3] = [1,1,1]
-        map[1:0] = map[1,2] = 1
-    if
+    for S in Stars:
+        L.append(S*3)
+    for S in Stars:
+        L.append(S+" "*(n//3)+S)
+    for S in Stars:
+        L.append(S*3)
+    return L
 
-    return
-
-number = int(input())
-map = [[0 for _ in range(number)] for _ in range(number)]
-print(make(number))
+n = int(input())
+# print(func(n))
+print("\n".join(func(n)))
