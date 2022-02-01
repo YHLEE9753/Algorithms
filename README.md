@@ -6,9 +6,8 @@ Solving algorithm problems using Python
 15.DP1(완)<br>
 16.그리디(완)<br>
 20.분할정복(완)<br>
-21.이분탐색(진행중)<br>
-22.우선순위 큐<br>
-23.DP2<br>
+21.이분탐색(완)<br>
+23.DP2(진행중)<br>
 24.DFS,BFS(완)<br>
 25.최단경로<br>
 26.투 포인터<br>
