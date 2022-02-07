@@ -29,8 +29,5 @@ Solving algorithm problems using Python
 23.DP2(진행중)<br>
 24.DFS,BFS(완)<br>
 
-## Programmers Problem solving
-
-
 ## Problems Commentary website
 https://jasper-metal-130.notion.site/ad0e65b16eb240138a95c31f3d05d3c3
