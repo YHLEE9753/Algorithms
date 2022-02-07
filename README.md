@@ -1,4 +1,4 @@
-# Algorithms
+# BOJ - Algorithms
 Solving algorithm problems using Python
 
 ## BaekJoon Problem solving
