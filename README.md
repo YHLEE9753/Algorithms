@@ -3,9 +3,9 @@ Solving algorithm problems using Python
 
 ## BaekJoon Problem solving - Java
 9.기본 수학2<br>
-11.브루트 포스<br>
+11.브루트 포스(완)<br>
 12.정렬<br>
-**14.백트래킹<br>**
+**14.백트래킹(완)<br>**
 **15.DP1<br>**
 16.그리디<br>
 **18.스택<br>**
