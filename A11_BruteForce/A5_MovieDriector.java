@@ -1,4 +1,4 @@
-package bruteForce_11;
+package A11_BruteForce;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class A5_MovieDriector {
 
         int count = 0;
         String check = "666";
-        for(int i = 1;i<10000;i++){
+        for(int i = 1;i<1000000000;i++){
             String str = String.valueOf(i);
             if(str.contains(check)){
                 count++;

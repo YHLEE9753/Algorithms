@@ -1,4 +1,4 @@
-package bruteForce_11;
+package A11_BruteForce;
 
 import java.util.Scanner;
 

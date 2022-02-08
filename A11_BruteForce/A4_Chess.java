@@ -1,6 +1,5 @@
-package bruteForce_11;
+package A11_BruteForce;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A4_Chess {

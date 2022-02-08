@@ -1,7 +1,6 @@
-package bruteForce_11;
+package A11_BruteForce;
 
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 public class A3_DungChi {
     public static void main(String[] args) {
