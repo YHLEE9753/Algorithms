@@ -1,9 +1,13 @@
+package A14_BackTracking;
+
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class test {
-    static boolean visit [];
-    static int arr [];
+public class A2_NM2 {
+
+    static boolean[] visit;
+    static int[] arr;
+    static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         StringTokenizer st = new StringTokenizer(sc.nextLine());
@@ -11,33 +15,32 @@ public class test {
         int M = Integer.valueOf(st.nextToken());
 
         visit = new boolean[N];
-        arr  = new int[M];
-
+        arr = new int[M];
         dfs(N,M,0);
+        System.out.println(sb);
     }
 
     private static void dfs(int N, int M, int depth) {
-        // 깊이 도달 시 출력
         if(depth == M){
-            for(int i = 0;i<M;i++){
-                System.out.print(arr[i] + " ");
+            for(int val : arr){
+                sb.append(val).append(" ");
             }
-            System.out.println();
+            sb.append("\n");
             return;
         }
 
-        // 깊이 도달하자 1, 2, 3, 4
-        for(int i = 0;i<N;i++){
-            // 쓰지 않은거면
+        for(int i =0;i<N;i++){
             if(!visit[i]){
-                visit[i] = true; // 중복제거를 위해
+                // 이전 값과 비교 로직 추기
+                if(depth > 0){
+                    int before = arr[depth-1];
+                    if(before > i) continue;
+                }
                 arr[depth] = i+1;
+                visit[i] = true;
                 dfs(N,M,depth+1);
                 visit[i] = false;
             }
-
         }
-
     }
-
 }
