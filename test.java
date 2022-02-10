@@ -2,43 +2,19 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class test {
-    static int[] arr;
-    static int N;
-    static int count;
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        N = sc.nextInt();
-        arr = new int[N];
+//        int n = sc.nextInt();
+        System.out.println("start");
+        for(int i = 0;i<=10;i++){
+            // 소수가 아니면 넘어간다.
 
-        nQueen(0);
-        System.out.println(count);
-    }
-
-    private static void nQueen(int depth) {
-        if (depth == N) {
-            count++;
-            return;
-        }
-
-        for (int i = 0; i < N; i++) {
-            arr[depth] = i;
-            if(Possibility(depth)){
-                nQueen(depth+1);
+            // 2가 소수이면 2의 배수는 전부 소수가 아니다.
+            for(int j = i*i;j< 10;j=j+1){
+                System.out.println(j);
             }
-
+            System.out.println();
         }
-
-    }
-
-    private static boolean Possibility(int col) {
-        for(int i = 0;i<col;i++){
-            if(arr[i] == arr[col]){
-                return false;
-            }else if(Math.abs(arr[i]-arr[col]) == Math.abs(i-col)){
-                return false;
-            }
-        }
-        return true;
+        System.out.println("end");
     }
 }
