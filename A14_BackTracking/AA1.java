@@ -1,6 +1,8 @@
-import java.util.*;
+package A14_BackTracking;
 
-public class test {
+import java.util.Scanner;
+
+public class AA1 {
     static int[] arr;
     static boolean[] visit;
 
@@ -21,13 +23,15 @@ public class test {
                 System.out.print(i+" ");
             }
             System.out.println();
+            return;
         }
 
         for(int i = 0;i<N;i++){
             if(!visit[i]){
                 visit[i] = true;
-
-
+                arr[depth] = i+1;
+                dfs(N,M,depth+1);
+                visit[i] = false;
             }
         }
     }

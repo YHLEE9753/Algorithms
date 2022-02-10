@@ -1,6 +1,8 @@
-import java.util.*;
+package A14_BackTracking;
 
-public class test {
+import java.util.Scanner;
+
+public class AA3 {
     static int[] arr;
     static boolean[] visit;
 
@@ -15,20 +17,18 @@ public class test {
         dfs(N, M, 0);
     }
 
-    private static void dfs(int N, int M, int depth) {
-        if(depth == M){
-            for(int i : arr){
-                System.out.print(i+" ");
+    private static void dfs(int n, int m, int depth) {
+        if (depth == m) {
+            for (int i : arr) {
+                System.out.print(i + " ");
             }
             System.out.println();
+            return;
         }
 
-        for(int i = 0;i<N;i++){
-            if(!visit[i]){
-                visit[i] = true;
-
-
-            }
+        for (int i = 0; i < n; i++) {
+            arr[depth] = i + 1;
+            dfs(n, m, depth + 1);
         }
     }
 }
