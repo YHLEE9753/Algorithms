@@ -1,4 +1,4 @@
-package A9_Math2;
+package A09_Math2;
 
 import java.util.Scanner;
 
