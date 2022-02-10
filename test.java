@@ -1,34 +1,44 @@
+package A17_NumberTheoryAndCombinatorics;
+
 import java.util.*;
 
+
 public class test {
-    static int[] arr;
-    static boolean[] visit;
-
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        Set<Integer> set = new HashSet<>();
+        int n = sc.nextInt();
+        int [] arr = new int[n];
+        for(int i =0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        Arrays.sort(arr);
+        for(int i =0;i<=arr[0];i++){
+            int gcd = gcd((arr[0]-i),(arr[1]-i));
+            if(gcd != 1){
+                boolean flag = true;
+                for(int a:arr){
+                    if((a-i)%gcd!=0){
+                        flag = false;
+                    }
+                }
+                if(flag) set.add(gcd);
+            }
+        }
+        Iterator iter = set.iterator();
+        int[] result = new int[set.size()];
+        int index = 0;
+        while(iter.hasNext()){
+            result[index++] = (int)iter.next();
+        }
+        Arrays.sort(result);
+        for(int i : result){
+            System.out.print(i+" ");
+        }
 
-        int N = in.nextInt();
-        int M = in.nextInt();
-
-        arr = new int[M];
-        visit = new boolean[N];
-        dfs(N, M, 0);
     }
-
-    private static void dfs(int N, int M, int depth) {
-        if(depth == M){
-            for(int i : arr){
-                System.out.print(i+" ");
-            }
-            System.out.println();
-        }
-
-        for(int i = 0;i<N;i++){
-            if(!visit[i]){
-                visit[i] = true;
-
-
-            }
-        }
+    static int gcd(int a, int b){
+        if(b==0) return a;
+        else return gcd(b, a%b);
     }
 }
