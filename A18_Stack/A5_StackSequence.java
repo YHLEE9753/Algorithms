@@ -1,15 +1,10 @@
 package A18_Stack;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-import java.util.Stack;
+import java.io.*;
+import java.util.*;
 
 public class A5_StackSequence {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
@@ -18,8 +13,10 @@ public class A5_StackSequence {
         for (int i = 0; i < N; i++) {
             numbers[i] = scanner.nextInt();
         }
+
         Stack<Integer> stack = new Stack<>();
         List<Character> results = new ArrayList<>();
+
 
         int count = 1;
         boolean isAble = true;
@@ -42,6 +39,14 @@ public class A5_StackSequence {
                     }
                 }
             }
+        }
+
+        if (isAble) {
+            for (int i = 0; i < results.size(); i++) {
+                System.out.println(results.get(i));
+            }
+        } else {
+            System.out.println("NO");
         }
     }
 }
