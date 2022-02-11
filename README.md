@@ -9,7 +9,7 @@ Solving algorithm problems using Python
 15.DP1<br>
 16.그리디<br>
 17.정수론 및 조합론(완)<br>
-18.스택<br>
+18.스택(완)<br>
 19.큐,덱(완)<br>
 20.분할정복<br>
 21.이분탐색<br>
