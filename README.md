@@ -11,7 +11,7 @@ Solving algorithm problems using Python
 17.정수론 및 조합론(완)<br>
 18.스택(완)<br>
 19.큐,덱(완)<br>
-20.분할정복<br>
+20.분할정복(완)<br>
 21.이분탐색<br>
 22.우선순위 큐<br>
 23.DP2<br>
