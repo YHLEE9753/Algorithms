@@ -12,8 +12,8 @@ Solving algorithm problems using Python
 18.스택(완)<br>
 19.큐,덱(완)<br>
 20.분할정복(완)<br>
-21.이분탐색<br>
-22.우선순위 큐<br>
+21.이분탐색(완)<br>
+22.우선순위 큐(완)<br>
 23.DP2<br>
 24.DFS,BFS<br>
 25.최단경로<br>
@@ -27,7 +27,6 @@ Solving algorithm problems using Python
 16.그리디(완)<br>
 20.분할정복(완)<br>
 21.이분탐색(완)<br>
-23.DP2(진행중)<br>
 24.DFS,BFS(완)<br>
 
 ## Problems Commentary website
