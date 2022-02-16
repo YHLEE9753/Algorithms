@@ -1,5 +1,5 @@
 # BOJ - Algorithms
-Solving algorithm problems using Python
+Solving algorithm problems using JAVA and Python
 
 ## BaekJoon Problem solving - Java
 9.기본 수학2(완)<br>
