@@ -15,7 +15,7 @@ Solving algorithm problems using JAVA and Python
 21.이분탐색(완)<br>
 22.우선순위 큐(완)<br>
 23.DP2<br>
-24.DFS,BFS<br>
+24.DFS,BFS(완)<br>
 25.최단경로<br>
 26.투 포인터<br>
 27.동적 계획법과 최단거리 역추적<br>
